@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#8f8f8f"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/default_brand_contact" />
+
+    <LinearLayout
+        android:id="@+id/item_time"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:30PM" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toLeftOf="@id/item_time"
+        android:layout_toRightOf="@id/item_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Subscripttion Accounts"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="每日经济新闻:对香港出口是的发撒旦法"
+            android:textColor="#4f4f4f" />
+    </LinearLayout>
+
+</RelativeLayout>

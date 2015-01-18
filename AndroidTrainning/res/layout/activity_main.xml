@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef" >
+
+    <include layout="@layout/common_title" android:id="@+id/title_layout"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:orientation="vertical"
+        android:background="#afafaf"
+        android:padding="5dp" >
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_to_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="This is a Button" />
+
+        <TextView
+            android:id="@+id/txt_string_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/pay_summary"
+            android:textColor="@color/text_color" />
+
+<!--         <EditText -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginTop="10dp" -->
+<!--             android:hint="input some text" /> -->
+        
+         <Button
+            android:id="@+id/btn_to_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Wechat Example" />
+         
+         <Button
+            android:id="@+id/btn_to_qq_browser_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="QQ Browser Setting" />
+         
+         <Button
+            android:id="@+id/btn_to_qq_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="QQ Login" />
+         
+    </LinearLayout>
+
+    <!-- <AbsoluteLayout -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content"> -->
+    <!-- <TextView android:layout_x="200dp" android:layout_y="200dp" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="a00000000"/> -->
+
+
+    <!-- </AbsoluteLayout> -->
+
+
+    <!-- <FrameLayout -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content"> -->
+    <!-- <EditText -->
+    <!-- android:layout_marginTop="10dp" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="@dimen/btn_normal_height" -->
+    <!-- android:hint="input some text" -->
+    <!-- /> -->
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="a00000000"/> -->
+    <!-- </FrameLayout> -->
+
+</RelativeLayout>

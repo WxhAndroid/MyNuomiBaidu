@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">安卓讲义</string>
+    <string name="hello_world">你好,世界!</string>
+    <string name="action_settings">设置</string>
+    <string name="a_string">这是一个字符串</string>
+    <string name="pay_summary">嗨, %1$s! 您有 %2$d 条新信息</string>
+
+</resources>
