@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="csp1">
+        <item>全部分类</item>
+        <item>今日新单</item>
+        <item>电影</item>
+        <item>美食</item>
+    </string-array>
+    <string-array name="csp2">
+        <item>商圈</item>
+        <item>南山区</item>
+        <item>福田区</item>
+        <item>罗湖区</item>
+    </string-array>
+    <string-array name="csp3">
+        <item>默认排序</item>
+        <item>评价最高</item>
+        <item>销量最高</item>
+        <item>价格最低</item>
+    </string-array>
+    <string-array name="csp4">
+        <item>筛选</item>
+        <item>50以下</item>
+        <item>50-100</item>
+        <item>100以上</item>
+    </string-array>
+
+</resources>

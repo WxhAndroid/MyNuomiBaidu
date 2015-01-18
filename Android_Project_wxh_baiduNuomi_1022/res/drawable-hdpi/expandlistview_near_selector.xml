@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <element>
+    	<item android:state_expanded="false"
+    		android:drawable="@drawable/tuan_details_arrows_red_right">
+    	</item>
+    </element>
+    <element>
+    	<item 
+    		android:drawable="@drawable/tuan_details_arrows_red_down">
+    	</item>
+    </element>
+</selector>

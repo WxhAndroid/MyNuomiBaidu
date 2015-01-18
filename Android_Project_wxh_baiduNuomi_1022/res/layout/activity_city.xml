@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部 开始 -->
+
+   <!--   <RelativeLayout
+        android:id="@+id/rl_top_city"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/nuomi_top_city"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_launcher_nuomi"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tx_current_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/nuomi_top_city"
+            android:text="当前城市"
+            android:textSize="16sp" />
+    </RelativeLayout> 
+    -->
+    <!-- 头部 结束 -->
+
+
+    <!-- 搜索城市开始 -->
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#00000000" >
+
+        <AutoCompleteTextView
+            android:id="@+id/at_search"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:completionThreshold="1"
+            android:hint="请输入字母或城市" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tx_location_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:text="定位返回信息：" />
+
+        <TextView
+            android:id="@+id/tx_location_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位城市" />
+
+        <Button
+            android:id="@+id/btn_location_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@null" />
+    </LinearLayout>
+
+    <!-- 城市列表开始 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:descendantFocusability="blocksDescendants" >
+
+        <!-- 城市列表 -->
+
+        <ListView
+            android:id="@+id/lv_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"
+            android:scrollbars="none" >
+        </ListView>
+
+        <!-- 右边字母 -->
+
+        <ListView
+            android:id="@+id/lv_letter"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

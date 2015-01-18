@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <CheckBox
+        android:id="@+id/cb_favorite_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/img_favorite_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_toRightOf="@+id/cb_favorite_checkbox"
+        android:src="@drawable/ic_launcher"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tx_favorite_brand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_favorite_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img_favorite_icon"
+        android:text="@null"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tx_favorite_short_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tx_favorite_brand_name"
+        android:layout_below="@+id/tx_favorite_brand_name"
+        android:layout_marginTop="5dp"
+        android:text="@null"
+        android:textColor="@color/A0A0A0"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tx_favorite_groupon_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tx_favorite_short_title"
+        android:layout_below="@+id/tx_favorite_short_title"
+        android:layout_marginTop="5dp"
+        android:text="@null"
+        android:textColor="@color/F15F82" />
+
+    <TextView
+        android:id="@+id/tx_favorite_market_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_favorite_groupon_price"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tx_favorite_groupon_price"
+        android:text="@null"
+        android:textColor="@color/A0A0A0"
+        android:textSize="12px" />
+
+    <TextView
+        android:id="@+id/tx_favorite_sale_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_favorite_market_price"
+        android:layout_alignParentRight="true"
+        android:text="@null"
+        android:textColor="@color/A0A0A0"
+        android:textSize="12px" />
+
+</RelativeLayout>

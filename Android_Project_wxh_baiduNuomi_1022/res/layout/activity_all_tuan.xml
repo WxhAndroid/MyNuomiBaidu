@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶部内容开始 -->
+<!--  
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp" >
+
+        <Button
+            android:id="@+id/img_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/web_backward_disable"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/img_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/img_all"
+            android:background="@drawable/ic_launcher_nuomi"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_icon"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="6dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="全部分类" />
+
+        <Button
+            android:id="@+id/img_search_tuan_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/icon_nav_sousuo_normal" />
+        
+        
+    </RelativeLayout>
+    -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/border_gray" />
+
+    <!-- 顶部列表 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 子菜单选项 -->
+
+        <LinearLayout
+            android:id="@+id/layout_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_normal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tX_all_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="38dip"
+                android:layout_weight="1.0"
+                android:clickable="true"
+                android:drawableRight="@drawable/tuan_detail_arrows_gray_down"
+                android:gravity="center"
+                android:text="全部分类"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <View
+                android:layout_width="1.0px"
+                android:layout_height="16.0dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_gray" />
+
+            <TextView
+                android:id="@+id/tx_shangquan"
+                android:layout_width="wrap_content"
+                android:layout_height="38dip"
+                android:layout_weight="1.0"
+                android:clickable="true"
+                android:drawableRight="@drawable/tuan_detail_arrows_gray_down"
+                android:gravity="center"
+                android:text="商圈"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <View
+                android:layout_width="1.0px"
+                android:layout_height="16.0dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_gray" />
+
+            <TextView
+                android:id="@+id/tx_default_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="38dip"
+                android:layout_weight="1.0"
+                android:clickable="true"
+                android:drawableRight="@drawable/tuan_detail_arrows_gray_down"
+                android:gravity="center"
+                android:text="默认排序"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <View
+                android:layout_width="1.0px"
+                android:layout_height="16.0dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/border_gray" />
+
+            <TextView
+                android:id="@+id/tx_select"
+                android:layout_width="wrap_content"
+                android:layout_height="38dip"
+                android:layout_weight="1.0"
+                android:clickable="true"
+                android:drawableRight="@drawable/tuan_detail_arrows_gray_down"
+                android:gravity="center"
+                android:text="筛选"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 显示全部团购内容 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <!-- com.wxh.project.baiduNuomi.extend.ListViewForScrollView -->
+
+        <ListView
+            android:id="@+id/lv_all_tuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!-- 显示底部内容 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#F8F8F8"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_all_tuan_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tuanlist_filter_topic_left_bg_press"
+            android:text="全部"
+            android:textColor="#E11818" />
+
+        <Button
+            android:id="@+id/btn_lower_price_all_tuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tuanlist_filter_topic_right_bg_normal"
+            android:text="全网低价"
+            android:textColor="#E11818" />
+    </LinearLayout>
+
+</LinearLayout>

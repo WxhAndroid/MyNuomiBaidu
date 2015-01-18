@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部 开始 -->
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/nuomi_top"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_launcher_nuomi" />
+
+            <TextView
+                android:id="@+id/mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/nuomi_top"
+                android:text="我的" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 头部 结束 -->
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_login"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:text="登录" />
+
+        <TextView
+            android:id="@+id/tx_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableRight="@drawable/home_ic_arrows_red_right"
+            android:text="注册账号" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#DDDDDD"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:showDividers="middle" >
+
+        <Button
+            android:id="@+id/btn_2_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/mine_main_coupon_disable"
+            android:text="糯米券"
+            android:textColor="#797676" />
+
+        <Button
+            android:id="@+id/btn_2_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/mine_main_unpaid_disable"
+            android:text="待付款"
+            android:textColor="#797676" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@+id/tx_pay_already"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tx_pay_already"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/mine_main_paid_disable"
+                android:text="已付款"
+                android:textColor="#797676" />
+
+            <ImageView
+                android:id="@+id/btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/tuan_details_arrows_gray_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tx_pay_already"
+                android:layout_marginTop="5dp"
+                android:background="#cccccc" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tx_receice_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/mine_main_unreceive_disable"
+                android:text="待收货"
+                android:textColor="#797676" />
+
+            <ImageView
+                android:id="@+id/btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/tuan_details_arrows_gray_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/btn_4"
+                android:layout_marginTop="5dp"
+                android:background="#cccccc" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_5"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tx_my_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/mine_main_favorite_disable"
+                android:text="我的收藏"
+                android:textColor="#797676" />
+
+            <ImageView
+                android:id="@+id/btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/tuan_details_arrows_gray_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@+id/btn_5"
+                android:layout_marginTop="7dp"
+                android:background="#cccccc" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_6"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tx_my_pocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/mine_main_wallet_disable"
+                android:text="我的钱包"
+                android:textColor="#797676" />
+
+            <ImageView
+                android:id="@+id/btn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/tuan_details_arrows_gray_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/btn_6"
+                android:layout_marginTop="5dp"
+                android:background="#cccccc" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_7"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tx_electic_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/mine_main_voucher_disable"
+                android:text="我的代金券"
+                android:textColor="#797676" />
+
+            <ImageView
+                android:id="@+id/btn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/tuan_details_arrows_gray_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/btn_7"
+                android:layout_marginTop="5dp"
+                android:background="#cccccc" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

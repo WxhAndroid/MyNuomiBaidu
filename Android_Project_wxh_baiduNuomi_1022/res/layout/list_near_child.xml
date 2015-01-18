@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/img_near_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tx_near_short_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_near_image"
+            android:layout_alignTop="@+id/img_near_image"
+            android:text="@null"
+            android:textColor="@color/A0A0A0"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tx_near_groupon_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_near_image"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_near_image"
+            android:text="@null"
+            android:textColor="@color/F15F82" />
+
+        <TextView
+            android:id="@+id/tx_near_market_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tx_near_groupon_price"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tx_near_groupon_price"
+            android:text="@null"
+            android:textColor="@color/A0A0A0"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tx_near_sale_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tx_near_market_price"
+            android:layout_alignParentRight="true"
+            android:text="@null"
+            android:textColor="@color/A0A0A0"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
